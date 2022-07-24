@@ -1019,6 +1019,7 @@ void UCTSearcher::Playout(visitor_t& visitor)
 			if (ply == 0) {
 				ply = 1;
 
+				// (PER)
 				// 開始局面を局面集からランダムに選ぶ
 				{
 					std::unique_lock<Mutex> lock(imutex);
